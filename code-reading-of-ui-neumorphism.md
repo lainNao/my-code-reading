@@ -158,6 +158,25 @@ describe('Typography', () => {
   }
   ```
 - componentsフォルダ配下はfeature（？）毎に分けずに並列。ただ、hocs、transitionsフォルダは分かれている。並列のほうが公式ドキュメントのリンクと並びが同じで分かりやすい気はする。小規模だからだとは思う。
+- childrenに一括でonchangeをセットしている箇所がある
+  ```tsx
+  //Form.jsx
+  ...
+  render() {
+    const { children } = this.props
+    const formChildren = Children.map(children, (child) => {
+      return cloneElement(child, {
+        ...child.props,
+        onChange: (e) => this.handleChange(e)
+      })
+    })
+    return (
+      <form onSubmit={this.handleSubmit} onChange={this.handleFormChange}>
+        {formChildren}
+      </form>
+    )
+  }
+  ```
 
 ## 微妙だと思った箇所
 - 自動テストが1ファイルでtruthyかしか見てない
