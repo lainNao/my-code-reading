@@ -1,20 +1,20 @@
 # 目次
+
 - 結論
   - [参考になった箇所](#参考になった箇所)
   - [微妙だと思った箇所](#微妙だと思った箇所)
   - [他気になった箇所](#他気になった箇所)
 - 色々
   - [なぜ読もうとしたか](#なぜ読もうとしたか)
-  - [URL](#URL)
+  - [URL](#url)
   - [使用ライブラリ](#使用ライブラリ)
   - [開発方法](#開発方法)
   - [リリース方法](#リリース方法)
-  - [フォルダ構成/ファイル構成](#フォルダ構成/ファイル構成)
+  - [フォルダ構成やファイル構成](#フォルダ構成やファイル構成)
   - [自動テスト構成](#自動テスト構成)
 
-# 内容
-
 ## 参考になった箇所
+
 - 使ったこと無いプロジェクト管理技術が使われてる
   - changesetsでのバージョン管理
   - pnpmでのモノレポ。各コンポーネントが別でpackage.jsonなどを持っている
@@ -30,6 +30,7 @@
 - 毎回forwardRefをつけている
 - ファイル名はケバブケース。ケースインセンシティブな環境対策かな
 - propsのデフォルト値は、propsの段階でつけるのでなく、一旦const化した時につけている
+
   ```tsx
   // icon.tsx
   export const Icon = forwardRef<IconProps, "svg">((props, ref) => {
@@ -45,7 +46,9 @@
     } = props
     ...
   ```
+
 - storiesのファイル、meta部分とstoryの部分でファイルを分けてるパターンがたまにあった。
+
   ```tsx
   // index.stories.tsx
   export * from "./menu.stories"  //こっちの方にstoryを書いていた
@@ -61,7 +64,9 @@
     ],
   }
   ```
+
 - コンポーネントは基本的にはスタイル用のProviderで囲っており、テーマで上書きできるようにしていた
+
   ```tsx
   //tag.tsx
   ...
@@ -71,7 +76,9 @@
     </TagStylesProvider>
   )
   ```
+
 - テーマはEmotionThemeProviderに依存していた
+
   ```tsx
   export function ThemeProvider(props: ThemeProviderProps): JSX.Element {
     const { cssVarsRoot, theme, children } = props
@@ -84,8 +91,10 @@
     )
   }  
   ```
+
 - CONTRIBUTING.mdがあって、コントリビュート方法が書いてあった。
 - contextの使い方。そもそもあるべきProviderが祖先でセットされていなかったらエラーをthrowし、開発時に気づけるようにしている。型安全ではないけど安全？
+
   ```tsx
   export function useTheme<T extends object = Dict>() {
     const theme = useContext(
@@ -101,19 +110,26 @@
   }
   ```
 
-
 ## 微妙だと思った箇所
+
 - jestの単体テストは豊富であったが、MUIと違いVRTは無かった
 
 ## 他気になった箇所
+
 - displayNameを毎回値を入れていたが、なんのメリットがあるのか分からなかった
 - data-loaded的な属性を使ったりしているコンポーネントがある。data属性はなぜ使っているのか？useStateでも同じような値を二重管理していた。
 - 他いろいろ
 
+## なぜ読もうとしたか
+
+- 有名な割に簡単そうだった
+
 ## URL
-https://github.com/chakra-ui/chakra-ui/
+
+<https://github.com/chakra-ui/chakra-ui/>
 
 ## 使用ライブラリ
+
 - 環境類
   - changesets
   - pnpm
@@ -123,18 +139,22 @@ https://github.com/chakra-ui/chakra-ui/
   - @emotion/react
 
 ## 開発方法
-- https://github.com/chakra-ui/chakra-ui/blob/main/CONTRIBUTING.md
+
+- <https://github.com/chakra-ui/chakra-ui/blob/main/CONTRIBUTING.md>
   - folkする
   - mainからブランチ作成
-  - pnpm pkg <module> build、pnpm pkg <module> testで動作確認
-  - pnpm changesetでchangelogを作成
+  - `pnpm pkg <module> build`、`pnpm pkg <module>` testで動作確認
+  - `pnpm changeset`でchangelogを作成
 
 ## リリース方法
+
 - changesets publish
 
-## フォルダ構成/ファイル構成
+## フォルダ構成やファイル構成
+
 - 普通のモノレポ
 
 ## 自動テスト構成
+
 - VRT無し
 - jest偏重
