@@ -8,3 +8,11 @@
 - [chakra-ui](/code-reading-of-chakra-ui.md)
 - [mui](/code-reading-of-mui.md)
 - [mantine](/code-reading-of-mantine.md)
+
+---
+
+TODO
+
+- Reactで作られたオープンソースアプリケーション
+- 設計パターンだけでなく個々のコンポーネントの実装の参考事例
+  - 特にMUIのDataGridなどのbodyとheaderが別のdivになっていてスクロールが同期するやつ

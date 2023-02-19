@@ -6,3 +6,5 @@
 - Wantedly Engineering Handbook
 - Mobility Technologiesアーキテクチャー全て
 - エムスリーテックブック#3
+- 虎の穴ラボの薄い本。vol.6
+- ４大分野の業務知識
