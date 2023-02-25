@@ -9,6 +9,11 @@
 - [mui](/code-reading-of-mui.md)
 - [mantine](/code-reading-of-mantine.md)
 
+## other
+
+- [markdownlint](/code-reading-of-markdownlint.md)
+- [zenn-editor](/code-reading-of-zenn-editor.md)
+
 ---
 
 TODO
