@@ -18,6 +18,7 @@
 
 - acorn、acorn-walk、recastのようなJSパーサーがあるらしい。babelも似た類のもの？eslintはこういうの使ってる？
   - 他にも dependency-checkというライブラリもあるっぽい。これはソースで使ってるライブラリがpackage.jsonにあるかどうか見てくれるやつだから方向は違う
+  - Himenon/code-dependencyは古いっぽい。手元のファイルでエラーが出た
 - madgeというライブラリがあるらしい。ファイルの依存関係を見れるらしくてこれはいい
 
 ## 微妙だと思った箇所
