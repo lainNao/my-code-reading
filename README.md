@@ -13,6 +13,7 @@
 
 - [markdownlint](/code-reading-of-markdownlint.md)
 - [zenn-editor](/code-reading-of-zenn-editor.md)
+- [mercari-shops-automation](/code-reading-of-mercari-shops-automation.md)
 
 ---
 
