@@ -73,7 +73,7 @@ import * as dependencyCruiserConfig from "./.dependency-cruiser.js";
 // TODO: これだとファイル単位でしか見てないので、変更かけた関数単位などでも依存関係を見れるようにしたいな？
 // TODO: CLIで使えるようにして、かつ以下は引数で渡せるようにする
 
-const TARGET_FILE = "src/shared/hooks/useTabTitle.ts";
+const TARGET_FILE = "src/好きなパス.ts";
 const ARRAY_OF_FILES_AND_DIRS_TO_CRUISE: string[] = [
   "src/**/*.ts",
   "src/**/*.tsx",
@@ -179,13 +179,14 @@ const calledFunctionNames = getCalledFunctionNames(functionCode);
 console.log(calledFunctionNames); //[ 'g', 'b', 'd', 'a' ]
 ```
 
-上は、jsのみしか対応してない。以下は、ts対応版。
+上は、jsのみしか対応してない。
+以下はts対応版。
 
 ```ts
 import ts, { SourceFile } from "typescript";
 
 //TODO: コマンドから渡せるようにする
-const FILE_PATH = "./astts-source.ts";         //これを準備してください。パースする対象のtsファイルで、適当な
+const FILE_PATH = "./astts-source.ts";         //これを準備してください（パースする対象のtsファイル）。適当なやつでOK。
 
 const getSourceFile = (filePath: string): SourceFile | undefined => {
   const program = ts.createProgram([filePath], {});
@@ -246,7 +247,7 @@ if (sourceFile) {
 
 ```
 
-↑が参照している`astts-source.tsはこんな感じ
+↑が参照している`astts-source.ts`はこんな感じ
 
 ```ts
 const b = () => {};
@@ -273,7 +274,7 @@ function a() {
 b();
 ```
 
-↑のgetFunctionCalledScopeは未実装。本来の目的の一つである関数が呼ばれてるスコープを取得したいのをやりたいやつ。
+↑の↑のソース内のgetFunctionCalledScopeは未実装。本来の目的の一つである関数が呼ばれてるスコープを取得したいのをやりたいやつ。
 
 で以下はそれをできるようにしたっぽいやつ。
 
@@ -373,8 +374,15 @@ if (sourceFile) {
 指定ソース内で指定関数を実行している関数名一覧: [ 'a', 'a', '<global>' ]
 ```
 
-さっきより進歩してるけど、まだできてないっぽい。
-以下はexportしているやつのみ取得するスクリプトの途中。
+一応それなりに取得できてる気はする。ただ、これだと
+
+- exportしている関数だけ取得したい
+
+って思ってしまった（追記：今思えば別にその必要は無さそう。なぜならば、「dependency-cruiserで見つけた指定ファイルのdependentsのファイル内で、指定の関数が実行されている場所」を探すというロジックだけで「関数が実行されてない/されている」の結果は手に入るので（うまく説明できない）。それがexportされているものなのかどうかは見る必要がそもそも無いかもという）
+
+（追記：じゃあ↑と組み合わせてしまえば依存関係がひとまず関数においては取得できるのかも。大体は）
+
+以下は一応exportしているやつのみ取得するスクリプトの途中のやつ。やってみたので残しておく。
 
 ```ts
 import * as ts from "typescript";
@@ -443,5 +451,6 @@ const filePath =
 const absolutePath = path.resolve(filePath);
 console.log(listExports(absolutePath));
 ```
+
 
 という形でいろいろやってみてるけど面倒そうな割に「いや影響範囲の分かりやすいソースコードとspecがあれば別にこういうスクリプト無くてもほぼ困ること無いな」と思って一旦ストップになった。あとは他人から求められたら進めるかも。
