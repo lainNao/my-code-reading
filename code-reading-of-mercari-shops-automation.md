@@ -27,7 +27,9 @@
 ## 微妙だと思った箇所
 
 ## 他気になった箇所
-
+- この記事と直接関係は無いけどdependency-treeというライブラリがいいな。ファイルの依存関係を出すのはdependency-cruiserとgitよりこっちのほうが話が早い気がする
+  - <https://github.com/dependents/node-dependency-tree>
+  
 ## 使い方
 
 ## なぜ読もうとしたか
