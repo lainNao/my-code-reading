@@ -135,7 +135,39 @@ console.log(JSON.stringify(dependentTree, null, 2));
 
 - 差分をファイル単位だけで見るのでなく、スコープ単位でも見る（例えばファイルAに関数A〜Zがあったとして、関数Bだけいじった時は「ファイルAに依存するファイル」をdependency cruiseするのでなく、「ファイルAから関数Bをimportしているファイル」をdependency cruiseするようにしないといけない。これはdependency-cruiserだとできないかもなので、typescript compiler apiを使うとかしか無いのかも）
 
-以下は、jsファイル内で呼ばれている関数名一覧をconsole.logするスクリプト
+追記：これだけならdependency-treeというライブラリを使えば同じことできるっぽい
+```ts
+var dependencyTree = require("dependency-tree");
+
+// Returns a dependency tree object for the given file
+var tree = dependencyTree({
+  filename: "./src/好きなファイルパス.tsx",
+  directory: "./src",
+  // requireConfig: 'path/to/requirejs/config', // optional
+  // webpackConfig: 'path/to/webpack/config', // optional
+  tsConfig: "./tsconfig.json",
+  // nodeModulesConfig: {
+  //   entry: 'module'
+  // }, // optional
+  filter: (path) => path.indexOf("node_modules") === -1, // optional
+  // nonExistent: [], // optional
+  // noTypeDefinitions: false // optional
+});
+
+console.log(tree);
+
+// Returns a post-order traversal (list form) of the tree with duplicate sub-trees pruned.
+// This is useful for bundling source files, because the list gives the concatenation order.
+// Note: you can pass the same arguments as you would to dependencyTree()
+// var list = dependencyTree.toList({
+//   filename: 'path/to/a/file',
+//   directory: 'path/to/all/files'
+// });
+
+```
+
+というのは一旦別として、以下はjsファイル内で呼ばれている関数名一覧をconsole.logするスクリプト
+
 ```ts
 import acorn from "acorn";
 import { simple } from "acorn-walk";
