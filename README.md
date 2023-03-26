@@ -22,3 +22,6 @@ TODO
 - Reactで作られたオープンソースアプリケーション
 - 設計パターンだけでなく個々のコンポーネントの実装の参考事例
   - 特にMUIのDataGridなどのbodyとheaderが別のdivになっていてスクロールが同期するやつ
+- 全て同じ目次構造を持ってないとコミットできないようにする
+  - markdown的に警告など出てたらコミットできないようにする
+- https://github.com/lainNao/markdownlint-rule-trace-template-headers を作ったのでCIに組み込む

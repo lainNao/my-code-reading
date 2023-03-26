@@ -1,0 +1,23 @@
+{
+  "name": "my-code-reading",
+  "version": "1.0.0",
+  "description": "個人的なコードリーディング記録",
+  "main": "index.js",
+  "devDependencies": {
+    "markdownlint-cli2": "^0.6.0",
+    "markdownlint-rule-trace-template-headers": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/lainNao/my-code-reading#readme",
+  "packageManager": "pnpm@7.30.0",
+  "engines": {
+    "npm": "pnpmを使ってみています",
+    "yarn": "pnpmを使ってみています",
+    "pnpm": ">=7.30.0"
+  }
+}

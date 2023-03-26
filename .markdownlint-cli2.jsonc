@@ -1,0 +1,12 @@
+{
+  "customRules": [
+    "markdownlint-rule-trace-template-headers"
+  ],
+  "config": {
+    "markdownlint-rule-trace-template-headers": {
+      "templateFile": "./code-reading-of-{something}.md",
+      "includedFiles": ["code-reading-of-*.md"],
+      "excludedFiles": []
+    }
+  }
+}
