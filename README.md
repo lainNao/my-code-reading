@@ -25,3 +25,11 @@ TODO
 - 全て同じ目次構造を持ってないとコミットできないようにする
   - markdown的に警告など出てたらコミットできないようにする
 - https://github.com/lainNao/markdownlint-rule-trace-template-headers を作ったのでCIに組み込む
+- storybook回りの色んなパターン
+- react-hook-form回りの実装パターンのプラクティス
+  - 例えば「TextFieldとラベルとエラーメッセージを混合したコンポーネント」を作る時、どう分割するか。
+    - レイアウト用コンポーネントを流し込めるようにしたほうがきれいかも
+    - そもそもそういう混合コンポーネントは作らない方が良かったりする？
+    - TextFieldというatomがあったとして、それをRHFでwrapしたRHFTextFieldを作るパターンがあるけど、そういう感じがよいのか？
+    - もっとやりやすい方法無いか？etc
+- ant designとか、syncfusionとか、devextremeとか
