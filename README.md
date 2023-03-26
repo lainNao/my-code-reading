@@ -20,11 +20,14 @@
 TODO
 
 - Reactで作られたオープンソースアプリケーション
+  - なんか色々あった気がする
+- Reactのコンポーネントライブラリ
+  - ant designとか、syncfusionとか、devextremeとか
 - 設計パターンだけでなく個々のコンポーネントの実装の参考事例
   - 特にMUIのDataGridなどのbodyとheaderが別のdivになっていてスクロールが同期するやつ
 - 全て同じ目次構造を持ってないとコミットできないようにする
   - markdown的に警告など出てたらコミットできないようにする
-- https://github.com/lainNao/markdownlint-rule-trace-template-headers を作ったのでCIに組み込む
+  - <https://github.com/lainNao/markdownlint-rule-trace-template-headers> を作ったのでCIに組み込む
 - storybook回りの色んなパターン
 - react-hook-form回りの実装パターンのプラクティス
   - 例えば「TextFieldとラベルとエラーメッセージを混合したコンポーネント」を作る時、どう分割するか。
@@ -32,4 +35,17 @@ TODO
     - そもそもそういう混合コンポーネントは作らない方が良かったりする？
     - TextFieldというatomがあったとして、それをRHFでwrapしたRHFTextFieldを作るパターンがあるけど、そういう感じがよいのか？
     - もっとやりやすい方法無いか？etc
-- ant designとか、syncfusionとか、devextremeとか
+- 以下勉強
+  - pnpm
+  - デザインシステムのデザイントークンをいい感じに扱う方法
+  - Formily <https://v2.formilyjs.org/> の存在を忘れてた
+    - react-hook-formがデファクトスタンダードみたいになっているけどそういえばFormilyとか中国系のフォームライブラリも試したい
+  - マイクロフロントエンド系ライブラリと、そのライブラリを使ってる団体が他に使ってるライブラリ
+    - quinkun <https://qiankun.umijs.org/>
+    - icestark <https://zenn.dev/mikana0918/articles/344861f49f7190>
+    - single-spaなら名前知っている程度だった。
+  - 久しぶりにマイクロフロントエンド系でググりたい
+    - <https://blog.cybozu.io/entry/2022/12/21/110000>
+  - なんかこういうの見つけた <https://ahooks.js.org/hooks/use-why-did-you-update>
+  - react-useとahookの比較
+  

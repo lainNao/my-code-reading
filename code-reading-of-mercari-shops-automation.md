@@ -31,6 +31,7 @@
 ## 微妙だと思った箇所
 
 ## 他気になった箇所
+
 - この記事と直接関係は無いけどdependency-treeというライブラリがいいな。ファイルの依存関係を出すのはdependency-cruiserとgitよりこっちのほうが話が早い気がする
   - <https://github.com/dependents/node-dependency-tree>
   
@@ -142,6 +143,7 @@ console.log(JSON.stringify(dependentTree, null, 2));
 - 差分をファイル単位だけで見るのでなく、スコープ単位でも見る（例えばファイルAに関数A〜Zがあったとして、関数Bだけいじった時は「ファイルAに依存するファイル」をdependency cruiseするのでなく、「ファイルAから関数Bをimportしているファイル」をdependency cruiseするようにしないといけない。これはdependency-cruiserだとできないかもなので、typescript compiler apiを使うとかしか無いのかも）
 
 追記：これだけならdependency-treeというライブラリを使えば同じことできるっぽい
+
 ```ts
 var dependencyTree = require("dependency-tree");
 
@@ -489,6 +491,5 @@ const filePath =
 const absolutePath = path.resolve(filePath);
 console.log(listExports(absolutePath));
 ```
-
 
 という形でいろいろやってみてるけど面倒そうな割に「いや影響範囲の分かりやすいソースコードとspecがあれば別にこういうスクリプト無くてもほぼ困ること無いな」と思って一旦ストップになった。あとは他人から求められたら進めるかも。

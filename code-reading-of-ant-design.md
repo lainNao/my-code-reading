@@ -60,18 +60,3 @@
 ## 自動テスト構成
 
 ## その他
-
-- いろんなdependenciesを見ていて思い出したけどFormily <https://v2.formilyjs.org/>ってどうなんだろう。
-  - react-hook-formがデファクトスタンダードみたいになっているけど、こちらもそういえばあまり見てなかったから少し見てみたさはある。
-- quinkunというのも見つけた。 <https://qiankun.umijs.org/>
-  - マイクロフロントエンドのライブラリ。
-    - 他にはicestarkとかもある
-      - <https://zenn.dev/mikana0918/articles/344861f49f7190>
-    - single-spaなら名前知っている程度だった。
-    - マイクロフロントエンドで久しぶりにググったら前より明らかに情報増えていた。
-      - <https://blog.cybozu.io/entry/2022/12/21/110000>
-    - マイクロフロントエンドをググるのをTODOに加えたい
-- なんかこういうの見つけた <https://ahooks.js.org/hooks/use-why-did-you-update>
-  - 面白い
-  - このahook <https://ahooks.js.org/hooks/use-request/index> とreact-useを比較してみたい。
-- こういうサイト下部の利用団体リストを一個一個見ていくのも面白そう <https://actions-cool.github.io/issues-helper>
