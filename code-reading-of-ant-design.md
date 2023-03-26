@@ -50,6 +50,8 @@
   - よいのかも。MUIも使っているっぽい。
 - dekko <https://github.com/benjycui/dekko>
   - 指定フォルダに指定ファイルがあるかどうかのchecker的なもの。CIに使えるかもしれない。でも使う前に似たようなツール他に無いのか探してみたい。
+- eslint-plugin-compat
+  - 良さそう。ブラウザの対応状況をlintしてくれるやつ。
 
 ## 開発方法
 

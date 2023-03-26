@@ -4,11 +4,12 @@
   "description": "個人的なコードリーディング記録",
   "main": "index.js",
   "devDependencies": {
+    "lefthook": "^1.3.8",
     "markdownlint-cli2": "^0.6.0",
     "markdownlint-rule-trace-template-headers": "^1.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "markdownlint-cli2 ."
   },
   "keywords": [],
   "author": "",

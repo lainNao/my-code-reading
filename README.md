@@ -40,6 +40,7 @@ TODO
   - デザインシステムのデザイントークンをいい感じに扱う方法
   - Formily <https://v2.formilyjs.org/> の存在を忘れてた
     - react-hook-formがデファクトスタンダードみたいになっているけどそういえばFormilyとか中国系のフォームライブラリも試したい
+      - XRender内のFormRenderとかant-designに依存してはいるかもだけどどうなのか <https://xrender.fun/>
   - マイクロフロントエンド系ライブラリと、そのライブラリを使ってる団体が他に使ってるライブラリ
     - quinkun <https://qiankun.umijs.org/>
     - icestark <https://zenn.dev/mikana0918/articles/344861f49f7190>
@@ -48,4 +49,6 @@ TODO
     - <https://blog.cybozu.io/entry/2022/12/21/110000>
   - なんかこういうの見つけた <https://ahooks.js.org/hooks/use-why-did-you-update>
   - react-useとahookの比較
-  
+  - CLI系ライブラリ
+    - cac
+    - inquirer.js
