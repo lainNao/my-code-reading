@@ -5,9 +5,9 @@
   - [微妙だと思った箇所](#微妙だと思った箇所)
   - [他気になった箇所](#他気になった箇所)
 - 色々
+  - [URL](#url)
   - [使い方](#使い方)
   - [なぜ読もうとしたか](#なぜ読もうとしたか)
-  - [URL](#url)
   - [使用ライブラリ](#使用ライブラリ)
   - [開発方法](#開発方法)
   - [リリース方法](#リリース方法)
@@ -191,6 +191,10 @@
   }
 ```
 
+## URL
+
+<https://github.com/DavidAnson/markdownlint>
+
 ## 使い方
 
 node.jsまたはブラウザで使えるやつ。importしたものを叩くだけっぽい。ちゃんと行単位でエラーやwarnを表示してくれる。
@@ -200,10 +204,6 @@ CLI、エディタ、github actions用はそれ用の統合版があるっぽい
 <https://github.com/DavidAnson/markdownlint#related>
 
 ## なぜ読もうとしたか
-
-## URL
-
-<https://github.com/DavidAnson/markdownlint>
 
 ## 使用ライブラリ
 

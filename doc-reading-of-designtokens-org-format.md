@@ -65,6 +65,12 @@
 
 ## 他気になった箇所
 
+## URL
+
+<https://tr.designtokens.org/format/#use-cases>
+<https://github.com/design-tokens/community-group>
+<https://zenn.dev/sakito/articles/c96625b2d30540>
+
 ## 使い方
 
 json化して、後は各PJで使う。
@@ -73,11 +79,6 @@ json化して、後は各PJで使う。
 ## なぜ読もうとしたか
 
 簡単だったから。
-
-## URL
-
-<https://tr.designtokens.org/format/#use-cases>
-<https://github.com/design-tokens/community-group>
 
 ## 使用ライブラリ
 

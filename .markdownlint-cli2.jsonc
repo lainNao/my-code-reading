@@ -8,6 +8,8 @@
       "includedFiles": ["code-reading-of-*.md"],
       "excludedFiles": []
     },
+
+    // 長い行あってもOKとしたい
     "MD013": false
   }
 }

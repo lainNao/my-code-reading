@@ -122,15 +122,15 @@
 - data-loaded的な属性を使ったりしているコンポーネントがある。data属性はなぜ使っているのか？useStateでも同じような値を二重管理していた。
 - 他いろいろ
 
+## URL
+
+<https://github.com/chakra-ui/chakra-ui/>
+
 ## 使い方
 
 ## なぜ読もうとしたか
 
 - 有名な割に簡単そうだった
-
-## URL
-
-<https://github.com/chakra-ui/chakra-ui/>
 
 ## 使用ライブラリ
 

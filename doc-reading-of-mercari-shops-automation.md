@@ -5,9 +5,9 @@
   - [微妙だと思った箇所](#微妙だと思った箇所)
   - [他気になった箇所](#他気になった箇所)
 - 色々
+  - [URL](#url)
   - [使い方](#使い方)
   - [なぜ読もうとしたか](#なぜ読もうとしたか)
-  - [URL](#url)
   - [使用ライブラリ](#使用ライブラリ)
   - [開発方法](#開発方法)
   - [リリース方法](#リリース方法)
@@ -34,16 +34,16 @@
 
 - この記事と直接関係は無いけどdependency-treeというライブラリがいいな。ファイルの依存関係を出すのはdependency-cruiserとgitよりこっちのほうが話が早い気がする
   - <https://github.com/dependents/node-dependency-tree>
+
+## URL
+
+<https://engineering.mercari.com/blog/entry/20220218-mercari-shops-automation/>
   
 ## 使い方
 
 ## なぜ読もうとしたか
 
 - 自動テストに興味があるから
-
-## URL
-
-<https://engineering.mercari.com/blog/entry/20220218-mercari-shops-automation/>
 
 ## 使用ライブラリ
 
