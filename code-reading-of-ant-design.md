@@ -19,6 +19,7 @@
 
 - 使用ライブラリの項目も参照。
 - テーマ編集のページが頑張っていた。<https://ant-design.github.io/antd-token-previewer/editor>
+- ChatGPTのCIツール使ってる。（chatgpt-cr.yml）
 
 ## 微妙だと思った箇所
 

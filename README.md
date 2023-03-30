@@ -1,6 +1,6 @@
 # my-code-reading
 
-個人的なコードリーディング記録
+個人的なコード/ドキュメントリーディング記録
 
 ## React
 
@@ -9,11 +9,15 @@
 - [mui](/code-reading-of-mui.md)
 - [mantine](/code-reading-of-mantine.md)
 
-## other
+## markdown
 
 - [markdownlint](/code-reading-of-markdownlint.md)
 - [zenn-editor](/code-reading-of-zenn-editor.md)
-- [mercari-shops-automation](/code-reading-of-mercari-shops-automation.md)
+
+## Design
+
+- [mercari-shops-automation](/doc-reading-of-mercari-shops-automation.md)
+- [designtokens.org/format](/doc-reading-of-designtokens-org-format.md)
 
 ---
 
