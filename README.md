@@ -17,7 +17,7 @@
 ## Design
 
 - [mercari-shops-automation](/doc-reading-of-mercari-shops-automation.md)
-- [designtokens.org/format](/doc-reading-of-designtokens-org-format.md)
+- [designtokens-org-format](/doc-reading-of-designtokens-org-format.md)
 
 ---
 
