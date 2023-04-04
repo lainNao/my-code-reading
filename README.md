@@ -19,6 +19,11 @@
 - [mercari-shops-automation](/doc-reading-of-mercari-shops-automation.md)
 - [designtokens-org-format](/doc-reading-of-designtokens-org-format.md)
 
+## 過去に読んだから省略するorもう一度読んでもいいかもなもの
+- チャット実装の参考にしようとして読んだもの
+  - Rocket Chat
+  - Mattermost
+
 ---
 
 TODO
