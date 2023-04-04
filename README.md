@@ -20,9 +20,11 @@
 - [designtokens-org-format](/doc-reading-of-designtokens-org-format.md)
 
 ## 過去に読んだから省略するorもう一度読んでもいいかもなもの
-- チャット実装の参考にしようとして読んだもの
+- 一昨年辺りにチャット実装の参考にしようとして読んだもの
   - Rocket Chat
+    - Meteorを使っていて結構ソースコードが独自的だった記憶がある。そもそもMeteorがwebsocket上でAPIのやり取りをするという珍しい形式だった。基本それに依存していてスケールしなさそうではあった。
   - Mattermost
+    - bootstrapのreactラッパーを使っていた。ソース的には簡素だった気がする。規模に合わせたスケール別の環境構築のあれこれが公式サイトに詳しく書かれていて良かった
 
 ---
 
