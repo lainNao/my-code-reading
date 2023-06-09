@@ -20,6 +20,15 @@
 - 使用ライブラリの項目も参照。
 - テーマ編集のページが頑張っていた。<https://ant-design.github.io/antd-token-previewer/editor>
 - ChatGPTのCIツール使ってる。（chatgpt-cr.yml）
+- コンポーネント（例えばSomeComponentとする）をexportする前に `SomeComponent.SomeProperty = 値` をしてなんか値をコンポーネントに埋め込んでいる
+  - これはclassで言うstaticなやつに似てる
+    - displayName埋め込みをしていた
+    - 子コンポーネント埋め込みもありだと思う
+    - 他の定数や関数埋め込みとかは使う機会あったりするのかな。関数はuseImperativeHandle使ったほうがインスタンスメソッド的に使えるのはありそう
+    - hooks埋め込みもあった。
+      - `App.useApp = useApp;` これはすごい。Appコンポーネントを使う側でuseAppすればいい感じに使えるのかな
+    - 設定関数埋め込みもあった。
+      - `Spin.setDefaultIndicator(デフォルトのスピナー)`
 
 ## 微妙だと思った箇所
 
