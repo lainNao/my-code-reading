@@ -142,7 +142,7 @@ console.log(JSON.stringify(dependentTree, null, 2));
 
 - 差分をファイル単位だけで見るのでなく、スコープ単位でも見る（例えばファイルAに関数A〜Zがあったとして、関数Bだけいじった時は「ファイルAに依存するファイル」をdependency cruiseするのでなく、「ファイルAから関数Bをimportしているファイル」をdependency cruiseするようにしないといけない。これはdependency-cruiserだとできないかもなので、typescript compiler apiを使うとかしか無いのかも）
 
-追記：これだけならdependency-treeというライブラリを使えば同じことできるっぽい
+追記：これだけならdependency-treeというライブラリを使えば同じことできるっぽい。ただモノレポで軽くやってみた時はうまくいかなかった
 
 ```ts
 var dependencyTree = require("dependency-tree");

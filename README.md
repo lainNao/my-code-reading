@@ -17,21 +17,24 @@
 ## Design
 
 - [mercari-shops-automation](/doc-reading-of-mercari-shops-automation.md)
-- [designtokens.org/format](/doc-reading-of-designtokens-org-format.md)
+- [designtokens-org-format](/doc-reading-of-designtokens-org-format.md)
 
 ---
 
 TODO
 
+- 過去に読んだから省略するorもう一度読んでもいいかもなもの
+  - 一昨年辺りにチャット実装の参考にしようとして読んだもの
+    - Rocket Chat
+      - Meteorを使っていて結構ソースコードが独自的だった記憶がある。そもそもMeteorがwebsocket上でAPIのやり取りをするという珍しい形式だった。基本それに依存していてスケールしなさそうではあった。
+    - Mattermost
+      - bootstrapのreactラッパーを使っていた。ソース的には簡素だった気がする。規模に合わせたスケール別の環境構築のあれこれが公式サイトに詳しく書かれていて良かった
 - Reactで作られたオープンソースアプリケーション
   - なんか色々あった気がする
 - Reactのコンポーネントライブラリ
   - ant designとか、syncfusionとか、devextremeとか
 - 設計パターンだけでなく個々のコンポーネントの実装の参考事例
   - 特にMUIのDataGridなどのbodyとheaderが別のdivになっていてスクロールが同期するやつ
-- 全て同じ目次構造を持ってないとコミットできないようにする
-  - markdown的に警告など出てたらコミットできないようにする
-  - <https://github.com/lainNao/markdownlint-rule-trace-template-headers> を作ったのでCIに組み込む
 - storybook回りの色んなパターン
 - react-hook-form回りの実装パターンのプラクティス
   - 例えば「TextFieldとラベルとエラーメッセージを混合したコンポーネント」を作る時、どう分割するか。
